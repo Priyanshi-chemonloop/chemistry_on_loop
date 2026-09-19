@@ -158,7 +158,7 @@ with main_tab1:
                                 <p style='margin:5px 0 0 0; color:#444444; font-size:14px;'><b>Category:</b> {profile['category']}</p>
                                 <p style='margin:2px 0 0 0; color:#555555; font-size:13px;'><b>Toxicology Profile:</b> {profile['explanation']}</p>
                             </div>
-                            """, unsafe_with_html=True)
+                            """, unsafe_allow_html=True)
                     
                     if matches == 0:
                         st.warning("No matched substances were identified from the 1000-item reference matrix. Ensure high label resolution.")
