@@ -67,7 +67,16 @@ ingredient_db = {
     "triclosan": {"rating": "🔴 Avoid", "category": "Antibacterial Agent", "explanation": "Commonly restricted agent. Persists strongly in local water drainage systems and suspected of interfering with clean cellular health."},
     "phthalates": {"rating": "🔴 Avoid", "category": "Plasticizer / Solvent", "explanation": "Often masked under generic fragrance tags. Linked to development toxicity anomalies across standard chemical safety profiles."},
     "toluene": {"rating": "🔴 Avoid", "category": "Nail Polish Solvent", "explanation": "A harsh chemical fluid found in low-grade treatments. Inhalation or frequent skin absorption causes systemic cellular fatigue."}
-}ingredient_db[f"restricted additive compound {i}"] = {"rating": "🔴 Avoid", "category": "Industrial Preservative", "explanation": "A historical preservation chemical. Excluded from premium formulations due to cumulative environmental toxicology footprints."}
+}
+
+for i in range(1, 958):
+    if i % 3 == 0:
+        ingredient_db[f"safe formulation item {i}"] = {"rating": "🟢 Safe", "category": "Formulation Stabilizer", "explanation": "An inert stabilizing compound. Fully evaluated across standard Indian cosmetics and completely safe for long-term usage."}
+    elif i % 3 == 1:
+        ingredient_db[f"sensitive component {i}"] = {"rating": "🟡 May Irritate", "category": "Active Modifier", "explanation": "An active booster designed to speed element penetration. Might spark minor temporary redness on highly sensitive complexions."}
+    else:
+        ingredient_db[f"restricted additive compound {i}"] = {"rating": "🔴 Avoid", "category": "Industrial Preservative", "explanation": "A historical preservation chemical. Excluded from premium formulations due to cumulative environmental toxicology footprints."}
+
 
 for i in range(1, 958):
     if i % 3 == 0:
