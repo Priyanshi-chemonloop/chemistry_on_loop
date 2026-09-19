@@ -23,7 +23,7 @@ st.markdown("""
     div.stButton > button:first-child { background-color: #046A38 !important; color: white !important; border-radius: 6px !important; border: none !important; padding: 0.5rem 2rem !important; font-weight: bold; }
     hr { border: 0; height: 1px; background: #E0E0E0; margin: 2rem 0; }
     </style>
-""", unsafe_with_html=True)
+""", unsafe_allow_html=True)
 ingredient_db = {
     "niacinamide": {"rating": "🟢 Safe", "category": "Vitamin / Antioxidant", "explanation": "Also known as Vitamin B3, it strengthens the skin barrier and fades dark spots. Highly stable and non-toxic for all skin types."},
     "hyaluronic acid": {"rating": "🟢 Safe", "category": "Humectant", "explanation": "A natural skin molecule that binds water to keep cells hydrated. Poses zero toxicological risk for topical application."},
