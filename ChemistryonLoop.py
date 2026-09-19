@@ -199,4 +199,4 @@ with main_tab2:
             <strong style="color: #046A38;">{rev['user']}</strong> reviewed <strong>{rev['prod']}</strong> — <small>{rev['status']}</small>
             <p style="margin: 5px 0 0 0; font-size: 13px; color: #333333;">"{rev['msg']}"</p>
         </div>
-        """, unsafe_with_html=True)
+        """, unsafe_allow_html=True)
